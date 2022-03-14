@@ -1,16 +1,3 @@
-
-<div align="center" style="background-color: rgb(78,204,163)">
-    <img src = "res/PrelimLogo.png">
-</div>
-
-
-
-=======
-
-# Table of Contents
-
-[TOC]
-
 # Features
 
 - Add features 
