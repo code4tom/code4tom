@@ -1,8 +1,17 @@
 # Features
-
-- Add features 
-- More features
-- Even more features
+- Prior domain knowledge is not necessarily required
+- High versatility and stability across domains
+- Allows for multilingual analysis
+- Uses embeddings so little to no preprocessing of the original data is needed
+- Automatically finds the number of topics
+- Any language model can be integrated
+- Modularity score indicates the quality of the clustering and serves as an objective evaluation metric
+- Outlayers are grouped together
+- Number of topics usually in an acceptable range to perform an analysis without the need to agglomerate clusters
+- Supports mixed membership models; thus, one document can contain several topics
+- Allows to select between POS and Keyword Extraction
+- Works on large and small datasets
+- Supports Topic labelling with GTP3
 
 
 
