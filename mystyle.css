@@ -1,0 +1,157 @@
+pre{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left:10px;
+  scrollbar-color: dark;
+  width: 100%;
+  max-height: 400px;
+  display: inline-block;
+  overflow: auto;
+  text-align: left;
+}
+
+.content {
+  padding: 100px 0;
+  padding-bottom: 40px;
+  margin: 50px auto 0 auto;
+  width: 40%;
+}
+
+.subcontent{
+  padding:10px;
+  padding-bottom:20px;
+}
+
+.mybutton {
+  align-items: center;
+  background-image: linear-gradient(to right, #7f00ff, #e100ff);
+  border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: black;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 50px;
+  padding: 3px;
+}
+
+.mybutton:active,
+.mybutton:hover {
+  outline: 0;
+}
+
+.mybutton span {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  background-position: left bottom;
+  transition: .3s ease-out;
+}
+
+.mybutton:hover span {
+  background: none;
+  color:white;
+}
+
+@media (min-width: 768px) {
+  .mybutton {
+    font-size: 20px;
+    min-width: 196px;
+  }
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+.landing-wrapper{
+  height:100%;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #fafafa;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+  width: 0%;
+}
+
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: #7f00ff;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(to right, #7f00ff, #e100ff);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+
+#toc {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    position: fixed;
+    background: #fafafa;
+    width: 150px;
+    padding-top: 220px;
+}
+
+#toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#toc li {
+    padding: 5px 10px;
+}
+
+#toc a {
+    color: #7f00ff;
+    text-decoration: none;
+    display: block;
+}
+
+#toc .toc-h2 {
+    padding-left: 10px;
+}
+
+#toc .toc-h3 {
+    padding-left: 20px;
+}
+
+#toc .toc-active {
+    background: #7f00ff;
+}
+
+:target:before {
+content:"";
+display:block;
+height:220px; /* fixed header height*/
+margin:-220px 0 0; /* negative fixed header height */
+}
